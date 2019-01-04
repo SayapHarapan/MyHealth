@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "885620424420",
+    "firebase_url": "https://my-health-a08f2.firebaseio.com",
+    "project_id": "my-health-a08f2",
+    "storage_bucket": "my-health-a08f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885620424420:android:f91c80765ff5959e",
+        "android_client_info": {
+          "package_name": "com.ichiban.kelompok1.myhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885620424420-2fa3rt3gkvr0qhcgv7us11gr08j07noj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8Pt9QrHnfUJT3Nt6ClMW0RQjFVqay2WM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

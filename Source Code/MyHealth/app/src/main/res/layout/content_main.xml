@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/myhealth" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_weight="1"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="3dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_straighten_" />
+
+                    <TextView
+                        android:id="@+id/BBItextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/bbi"
+                        android:textSize="50sp" />
+
+                    <Button
+                        android:id="@+id/BBIdetailbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/btn_bbi"
+                        android:text="Lihat Detail"
+                        android:textColor="@color/white"
+                        android:onClick="detailBBI"/>
+
+                    <TextView
+                        android:id="@+id/BBILabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Berat Badan Ideal" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_accessibility" />
+
+                    <TextView
+                        android:id="@+id/IMTtextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/imt"
+                        android:textSize="50sp" />
+
+                    <Button
+                        android:id="@+id/IMTdetailbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/btn_imt"
+                        android:text="Lihat Detail"
+                        android:textColor="@color/white"
+                        android:onClick="detailIMT"/>
+
+                    <TextView
+                        android:id="@+id/IMTlabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Indeks Massa Tubuh" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="2"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="20">
+
+            <Button
+                android:id="@+id/HitungKaloriButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/btn_kalori"
+                android:textColor="@color/white"
+                android:onClick="hitungKalori"
+                android:text="Hitung Kebutuhan Kalori Harian" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="20"
+            >
+
+            <Button
+                android:id="@+id/MenuMakanButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/btn_menumakan"
+                android:textColor="@color/white"
+                android:onClick="goToKadarLemak"
+                android:text="Prediksi Kadar Lemak Tubuh" />
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/signout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signOutAkun"
+            android:text="@string/sign_out_button" />
+    </LinearLayout>
+
+
+</ScrollView>

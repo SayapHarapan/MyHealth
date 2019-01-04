@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#189368</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparant">#00000000</color>
+    <color name="gradstart">#1fb983</color>
+    <color name="gradstop">#054962</color>
+
+    <color name="fill">#93CAC4</color>
+    <color name="buton">#00A2EA</color>
+    <color name="abu">#e6e6e6</color>
+
+    <color name="imt">#ffcc00</color>
+    <color name="bbi">#11bcde</color>
+    <color name="kalori">#ff0000</color>
+    <color name="menumakan">#29a329</color>
+</resources>
